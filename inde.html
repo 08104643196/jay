@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+    <link rel="stylesheet" href="pre.css">
+</head>
+<body>
+    <div class="preloader">
+        <img src="img/Cancer.gif">
+    </div>
+
+
+
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.querySelector('.preloader').style.display = 'none';
+
+                document.getElementById('content-placeholder').style.display = 'block';
+            }, 6000);
+        });
+    </script>
+</body>
+</html>

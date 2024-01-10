@@ -1,0 +1,17 @@
+ <!-- preloader -->
+    <div class="content-placeholder">
+        <div class="preloader">
+            <img src="img/Experiments In Processing_.gif" alt="loading...">
+        </div>
+    </div>
+    <!-- preloader ends -->
+
+<script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.querySelector('.preloader').style.display = 'none';
+
+                document.getElementById('content-placeholder').style.display = 'block';
+            }, 1000);
+        });
+    </script>
